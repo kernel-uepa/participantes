@@ -1,0 +1,119 @@
+:root {
+  --bg: #0a0a0a;
+  --surface: #111111;
+  --border: #1e1e1e;
+  --silver: #d9d9d9;
+  --amber: #ffb000;
+  --text: #e0e0e0;
+  --muted: #666;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Courier New', monospace;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+}
+
+header h1 {
+  color: var(--silver);
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+}
+
+header p {
+  color: var(--muted);
+  margin-top: 0.5rem;
+}
+
+.divergence {
+  color: var(--amber);
+  font-size: 0.85rem;
+  margin-top: 0.75rem;
+  letter-spacing: 0.2em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.5rem;
+  transition: border-color 0.2s;
+}
+
+.card:hover {
+  border-color: var(--silver);
+}
+
+.card-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--silver);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.card-name {
+  color: var(--silver);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.card-role {
+  color: var(--amber);
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+.card-bio {
+  color: var(--muted);
+  font-size: 0.8rem;
+  margin-top: 0.75rem;
+  line-height: 1.5;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  color: var(--amber);
+  text-decoration: none;
+  border: 1px solid var(--amber);
+  padding: 0.25rem 0.6rem;
+  border-radius: 3px;
+}
+
+.card-link:hover {
+  background: var(--amber);
+  color: var(--bg);
+}
+
+footer {
+  text-align: center;
+  margin-top: 4rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+  border-top: 1px solid var(--border);
+  padding-top: 2rem;
+}
